@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-base font-normal leading-5.5 text-black-900;
+  }
+}
+
+@layer utilities {
+  .footer-ltr-highlight {
+    @apply shadow-footer;
+    clip-path: inset(0 0 0 -100vmax);
+  }
+
+  .footer-rtl-hightlight {
+    @apply shadow-footer;
+    clip-path: inset(0 -100vmax 0 0);
+  }
+}
